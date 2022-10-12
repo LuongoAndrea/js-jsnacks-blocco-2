@@ -12,12 +12,51 @@
     <main>
         <section>
             <!-- es1 -->
+            <h2>Pari o Dispari</h2>
             <div class="mb-3">
                 <label class="form-label">inserisci un numero:</label>
                 <input type="text" class="form-control" id="input-es1">
             </div>
-            <button type="button" id="btn-es1" class="btn btn-primary">Primary</button>
+            <button type="button" id="btn-es1" class="btn btn-primary">Invia</button>
             <p class="py-3" id="text-es1"></p>
+        </section>
+        <section>
+            <h2>Generatore nome lista</h2>
+            <div class="container overflow-hidden ">
+                <div class="row gx-5">
+                    <div class="col-5">
+                        <div class="p-3">
+                            <label class="form-label">inserisci un nome:</label>
+                            <input type="text" class="form-control" id="input-nome-es2">
+                            <button type="button" id="aggiungiNome" class="btn btn-primary">inserisci nuovo nome</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-5">
+                        <div class="p-3">
+                            <label class="form-label">inserisci un cognome:</label>
+                            <input type="text" class="form-control" id="input-cognome-es2">
+                            <button type="button" id="aggiungiCognome" class="btn btn-primary">inserisci nuovo cognome</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 text-center">
+                    <div class="col-4">
+                        <div class="p-3">
+                            <label class="form-label">inserisci quantita nomi e cognomi nella lista:</label>
+                            <input type="number" class="form-control" id="input-lista-es2">
+                            <button type="button" id="generaLista-es2" class="btn btn-primary">genera lista</button>
+                            <p id="p-lista"></p>
+                            <div id="lista" class="d-flex">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        
         </section>
     </main>
     <script src="./js/script.js"></script>
