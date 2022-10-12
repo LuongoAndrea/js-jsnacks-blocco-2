@@ -74,13 +74,16 @@ let generaLista = function(){
     // for per creare la lista 
     for (let i = 0; i < quantitaLista; i++) {
         // creo un numero casuale ogni volta che clica per l'arrey nomi
-        let nRandomNomi = Math.floor(Math.random() * nNomi) + 1;
+        let nRandomNomi = Math.floor(Math.random() * nNomi);
+        console.log(nRandomNomi)
         // creo un numero casuale ogni volta che clica per l'arrey cognomi
-        let nRandomCognomi = Math.floor(Math.random() * nCognomi) + 1;
+        let nRandomCognomi = Math.floor(Math.random() * nCognomi);
         // inserisco per trovare il nome in modo casuale 
         let nome = nomi[nRandomNomi];
+        console.log(nomi[nRandomNomi])
         // inserisco per trovare il cognome in modo casuale 
         let cognome = cognomi[nRandomCognomi];
+        console.log(cognomi[nRandomCognomi])
         // creo nome lista sommando le 2 stringhe 
         let nomeLista = String(nome  + " " + cognome);
 
@@ -117,3 +120,28 @@ const listaBtn = document.getElementById("generaLista-es2");
 listaBtn.addEventListener("click", generaLista);
 
 console.log('--------------------------');
+console.log('snack 3');
+let numeri = []
+for (let i = 0; i < 10; i++) {
+    let n = Math.floor(Math.random() * 10);
+    numeri[i] = n;
+    console.log("numero "+ i +": "+ numeri[i]);
+}
+let media = 0;
+for (let i = 0; i < 10; i++) {
+    let pari = false;
+    let p = i % 2;
+    if(p == 0){
+        pari = true
+    }
+    else{
+        pari == false;
+    }
+    if(pari == false){
+        let n = numeri[i];
+        media = media + n;
+    }
+    
+}
+document.getElementById("p-es4").innerHTML = media;
+
